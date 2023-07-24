@@ -49,7 +49,7 @@ class HomeUserItem extends StatelessWidget {
               fontSize: 12,
               fontWeight: medium,
             ),
-            maxLines: 2,
+            maxLines: 1,
           ),
         ],
       ),
