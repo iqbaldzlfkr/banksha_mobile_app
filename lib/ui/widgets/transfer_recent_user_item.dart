@@ -16,6 +16,7 @@ class TransferRecentUserItem extends StatelessWidget {
       margin: const EdgeInsets.only(
         bottom: 16,
       ),
+      width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.all(22),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -43,20 +44,26 @@ class TransferRecentUserItem extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                user.name.toString(),
-                style: blackTextStyle.copyWith(
-                  fontSize: 16,
-                  fontWeight: medium,
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 2.5,
+                child: Text(
+                  user.name.toString(),
+                  style: blackTextStyle.copyWith(
+                    fontSize: 16,
+                    fontWeight: medium,
+                  ),
                 ),
               ),
               const SizedBox(
                 height: 2,
               ),
-              Text(
-                '@${user.username}',
-                style: greyTextStyle.copyWith(
-                  fontSize: 12,
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 2.5,
+                child: Text(
+                  '@${user.username}',
+                  style: greyTextStyle.copyWith(
+                    fontSize: 12,
+                  ),
                 ),
               ),
             ],

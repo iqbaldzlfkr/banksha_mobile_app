@@ -191,11 +191,11 @@ class HomePage extends StatelessWidget {
         if (state is AuthSuccess) {
           return Container(
             width: double.infinity,
-            height: 220,
+            height: MediaQuery.of(context).size.height / 3,
             margin: const EdgeInsets.only(
               top: 30,
             ),
-            padding: const EdgeInsets.all(30),
+            padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(28),
               image: const DecorationImage(
@@ -528,7 +528,7 @@ class MoreDialog extends StatelessWidget {
       content: Container(
         height: 326,
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40),
           color: lightBackgroundColor,
